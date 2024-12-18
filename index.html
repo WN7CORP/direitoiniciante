@@ -272,14 +272,14 @@
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
-</style><script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script></head><body><div class="container"><div style="text-align: left; font-size: 12px; color: #888; margin-bottom: 10px;" id="last-update"></div><button class="home-btn" onclick="showHome()"><i class="fas fa-home"></i> Início</button><div class="header"><div style="display: flex; justify-content: center; margin-bottom: 20px;"><dotlottie-player src="https://lottie.host/315bee09-976f-4ffa-b81e-a7d4f94f22d2/UlhFo9JrcM.lottie" background="transparent" speed="1" style="width: 150px; height: 150px" loop="" autoplay=""></dotlottie-player></div><h1>Cursos Básicos de Direito para Iniciantes</h1><div style="text-align: center; font-size: 12px; color: #888; margin-bottom: 15px;">Comece sua jornada no Direito com nossos cursos introdutórios 📚⚖️</div><div class="search-container hidden"><div class="search-box"><input type="text" class="search-input" placeholder="Pesquisar cursos..."><i class="search-icon fas fa-search"></i></div></div><div class="stats-container"><div class="book-count" id="book-count"></div><div class="category-count" id="category-count"></div></div></div><div class="navigation-buttons" style="
+</style><script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script></head><body><div class="container"><div style="text-align: left; font-size: 12px; color: #888; margin-bottom: 10px;" id="last-update"></div><button class="home-btn" onclick="showHome()"><i class="fas fa-home"></i> In&#xed;cio</button><div class="header"><div style="display: flex; justify-content: center; margin-bottom: 20px;"><dotlottie-player src="https://lottie.host/315bee09-976f-4ffa-b81e-a7d4f94f22d2/UlhFo9JrcM.lottie" background="transparent" speed="1" style="width: 150px; height: 150px" loop autoplay></dotlottie-player></div><h1>Cursos B&#xe1;sicos de Direito para Iniciantes</h1><div style="text-align: center; font-size: 12px; color: #888; margin-bottom: 15px;">Comece sua jornada no Direito com nossos cursos introdut&#xf3;rios &#x1f4da;&#x2696;&#xfe0f;</div><div class="search-container hidden"><div class="search-box"><input type="text" class="search-input" placeholder="Pesquisar cursos..."><i class="search-icon fas fa-search"></i></div></div><div class="stats-container"><div class="book-count" id="book-count"></div><div class="category-count" id="category-count"></div></div></div><div class="navigation-buttons" style="
   display: none;
   gap: 10px;
   margin: 0 15px 20px;
   justify-content: center;
   flex-wrap: wrap;
 ">
-  <button onclick="showSection('recent-reads')" class="nav-btn" style="
+  <button onclick="showSection(&apos;recent-reads&apos;)" class="nav-btn" style="
     flex: 1;
     min-width: 150px;
     max-width: 200px;
@@ -297,7 +297,7 @@
     font-size: 14px;
   ">
     <i class="fas fa-history"></i>
-    Últimas Aulas
+    &#xda;ltimas Aulas
     <span class="count-badge" style="
       background: rgba(168, 3, 10, 0.2);
       padding: 2px 8px;
@@ -307,7 +307,7 @@
     " id="recent-count">0</span>
   </button>
   
-  <button onclick="showSection('favorites')" class="nav-btn" style="
+  <button onclick="showSection(&apos;favorites&apos;)" class="nav-btn" style="
     flex: 1;
     min-width: 150px;
     max-width: 200px;
@@ -334,8 +334,8 @@
       color: #c91f27;
     " id="favorites-count">0</span>
   </button>
-</div><div class="tabs" id="tabs"></div><div id="home-content" class="home-content"><div class="recommendation"><div class="recommendation-content"><h3>REFLITA</h3><p id="daily-recommendation">Carregando recomendação...</p></div><iframe class="recommendation-animation" src="https://lottie.host/embed/727109e7-6fe0-44f8-8e93-d168b2f9f0c2/fi5yyQLYCL.lottie" frameborder="0"></iframe></div><div class="recent-reads" id="recent-reads-section"><h2>Últimas Aulas</h2><div class="recent-books" id="recent-books"></div></div><div class="recent-reads" id="favorites-section" style="margin-bottom: 30px;"><h2>Meus Favoritos</h2><div class="recent-books" id="favorites-books"></div></div></div><div class="filter-buttons">
-  <button class="filter-btn active" data-sort="alpha">Ordem Cronológica</button>
+</div><div class="tabs" id="tabs"></div><div id="home-content" class="home-content"><div class="recommendation"><div class="recommendation-content"><h3>REFLITA</h3><p id="daily-recommendation">Carregando recomenda&#xe7;&#xe3;o...</p></div><iframe class="recommendation-animation" src="https://lottie.host/embed/727109e7-6fe0-44f8-8e93-d168b2f9f0c2/fi5yyQLYCL.lottie" frameborder="0"></iframe></div><div class="recent-reads" id="recent-reads-section"><h2>&#xda;ltimas Aulas</h2><div class="recent-books" id="recent-books"></div></div><div class="recent-reads" id="favorites-section" style="margin-bottom: 30px;"><h2>Meus Favoritos</h2><div class="recent-books" id="favorites-books"></div></div></div><div class="filter-buttons">
+  <button class="filter-btn active" data-sort="alpha">Ordem Cronol&#xf3;gica</button>
 </div><div class="books-grid" id="books-grid"></div></div><div class="iframe-modal" id="iframe-modal"><div class="iframe-container"><button class="close-btn" onclick="closeModal()">Fechar</button><iframe id="book-iframe" width="100%" height="100%" frameborder="0"></iframe></div></div><script src="https://kit.fontawesome.com/a076d05399.js"></script><script>const USER_STORAGE_KEY = 'user_reading_stats';
 let userStats = JSON.parse(localStorage.getItem(USER_STORAGE_KEY)) || {
   reads: 0,
@@ -347,7 +347,6 @@ let favorites = JSON.parse(localStorage.getItem('favorites') || '[]');
 let courseStartTime = 0;
 let completionNotified = false;
 let completionTimeout;
-
 function checkAndResetMonthlyCounts() {
   const now = new Date().getTime();
   const thirtyDays = 30 * 24 * 60 * 60 * 1000;
@@ -514,9 +513,9 @@ async function loadSheetData() {
           }
         }
         books[sheet.properties.title] = data.values.slice(1).map((row, index) => ({
-          order: row[0] || (index + 1).toString(), // Get order from column A, fallback to index+1
+          order: row[0] || (index + 1).toString(),
           link: row[1],
-          title: row[2], 
+          title: row[2],
           cover: row[3],
           categoryCover: row[4],
           synopsis: row[5] || 'Sinopse não disponível.',
@@ -706,25 +705,19 @@ function checkPassword(link, title, cover) {
     iframe.src = link;
     modal.style.display = 'block';
     startReadingTimer();
-    
-    // Start course completion timer
     courseStartTime = Date.now();
     completionNotified = false;
     checkCourseCompletion(title);
   }, 1000);
 }
-
-// Add function to check course completion
 function checkCourseCompletion(courseTitle) {
   completionTimeout = setTimeout(() => {
     if (!completionNotified) {
       showCompletionNotification(courseTitle);
       completionNotified = true;
     }
-  }, 5 * 60 * 1000); // 5 minutes
+  }, 5 * 60 * 1000);
 }
-
-// Add function to show completion notification
 function showCompletionNotification(courseTitle) {
   const notification = document.createElement('div');
   notification.className = 'course-completion';
@@ -735,26 +728,10 @@ function showCompletionNotification(courseTitle) {
       <div style="font-size: 12px; opacity: 0.8;">${courseTitle}</div>
     </div>
   `;
-  
   document.body.appendChild(notification);
-  
-  // Remove notification after animation completes
   setTimeout(() => {
     notification.remove();
   }, 4000);
-}
-
-// Modify closeModal function to clear completion timer
-function closeModal() {
-  stopReadingTimer();
-  clearTimeout(completionTimeout);
-  completionNotified = false;
-  const modal = document.getElementById('iframe-modal');
-  const iframe = document.getElementById('book-iframe');
-  const homeBtn = document.querySelector('.home-btn');
-  iframe.src = '';
-  modal.style.display = 'none';
-  homeBtn.style.display = 'inline-block';
 }
 function updateFavorites() {
   const favoritesContainer = document.getElementById('favorites-books');
@@ -825,7 +802,6 @@ function updateRecentReads() {
 function sortBooks(books) {
   if (!books) return [];
   return [...books].sort((a, b) => {
-    // Use order from column A for chronological sorting
     const orderA = parseInt(a.order) || 0;
     const orderB = parseInt(b.order) || 0;
     return orderA - orderB;
@@ -834,15 +810,14 @@ function sortBooks(books) {
 function displayBooks(booksList) {
   const filterButtons = document.querySelector('.filter-buttons');
   if (filterButtons) {
-      filterButtons.innerHTML = `
+    filterButtons.innerHTML = `
           <button class="filter-btn active" data-sort="alpha">Ordem Cronológica</button>
       `;
   }
-
   const sortedBooks = sortBooks(booksList);
   const grid = document.getElementById('books-grid');
   grid.innerHTML = '';
-  sortedBooks?.forEach((book) => {
+  sortedBooks?.forEach(book => {
     const card = document.createElement('div');
     card.className = 'book-card';
     card.innerHTML = `
@@ -863,17 +838,14 @@ function displayBooks(booksList) {
         </div>
       </div>
     `;
-
-    // Add click handler for the play button
     const playButton = card.querySelector('.play-button');
-    playButton.addEventListener('click', (e) => {
+    playButton.addEventListener('click', e => {
       e.stopPropagation();
       playButton.classList.add('clicked');
       setTimeout(() => {
         showBookOptionsMenu(book, book.link, book.title, book.cover);
       }, 300);
     });
-
     card.onclick = () => {
       showBookOptionsMenu(book, book.link, book.title, book.cover);
     };
@@ -952,7 +924,7 @@ function showBookOptionsMenu(book, link, title, cover) {
           border-radius: 10px;
           color: #fff;
           cursor: pointer;
-        ">Sinopse</button>
+        ">Sobre o Curso</button>
         <button onclick="openMaterialLink('${book.materialLink}')" class="tab-btn" style="
           flex: 1;
           padding: 8px;
@@ -969,7 +941,7 @@ function showBookOptionsMenu(book, link, title, cover) {
       </div>
 
       <div style="display: flex; gap: 10px; margin-top: 10px;">
-        <button onclick="openBook('${link}', '${title}', '${cover}')" class="read-btn" style="flex: 1;">Assistir Agora</button>
+        <button onclick="openBook('${link}', '${title}', '${cover}')" class="read-btn" style="flex: 1;">Iniciar Curso</button>
         <button onclick="closeBookMenu()" style="
           flex: 1;
           padding: 10px;
@@ -983,6 +955,7 @@ function showBookOptionsMenu(book, link, title, cover) {
       </div>
     </div>
   `;
+
   document.body.appendChild(backdrop);
   document.body.appendChild(menu);
   requestAnimationFrame(() => {
@@ -1273,13 +1246,10 @@ function updateUIText() {
     }
   }
 }
-
-// New function to handle opening material links
 function openMaterialLink(link) {
   if (link) {
     window.open(link, '_blank');
   } else {
     alert('Material de apoio não disponível para este curso.');
   }
-}
-</script></body></html>
+}</script></body></html>
